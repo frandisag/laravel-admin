@@ -8,7 +8,7 @@
                 </a>
             </h4>
         </div>
-        <div id="collapse{{ $key }}" class="panel-collapse collapse {{ $key == 0 ? 'in' : '' }}">
+        <div id="collapse{{ $key }}" class="panel-collapse collapse {{ $key == 0 ? '' : 'in' }}">
             <div class="box-body">
                 {!! $item['content'] !!}
             </div>

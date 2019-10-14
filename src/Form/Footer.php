@@ -114,6 +114,27 @@ class Footer implements Renderable
         return $this;
     }
 
+    public function enableNotification()
+    {
+        array_push($this->checkboxes, 'notification');
+
+        return $this;
+    }
+
+    public function enableContinue()
+    {
+        array_push($this->checkboxes, 'continue');
+
+        return $this;
+    }
+
+    public function enableRepeat()
+    {
+        array_push($this->checkboxes, 'repeat');
+
+        return $this;
+    }
+
     /**
      * Disable Creating Checkbox.
      *
